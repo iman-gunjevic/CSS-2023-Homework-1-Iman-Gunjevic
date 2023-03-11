@@ -1,11 +1,12 @@
 //Quiz questions
 const questions = [
-  {
+ { 
     question: "What does CSS stand for?",
     a: "Coding Summer/Spring School",
     b: "Coding Style Sheets",
     c: "Cascading Simple Sheets",
     d: "Cars SUVs & Sailboats",
+    e: "Cars Season Sale",
     correct: "a",
   },
   {
@@ -14,6 +15,7 @@ const questions = [
     b: "2021",
     c: "2022",
     d: "2023",
+    e: "666",
     correct: "b",
   },
   {
@@ -22,7 +24,26 @@ const questions = [
     b: "Bosnia and Herzegovina Futures Foundation",
     c: "Bosnia and Herzegovina Factory Foundation",
     d: "none of the above",
+    e: "Zeljezara",
     correct: "b",
+  },
+  { 
+    question: "Have you read Harry Potter?",
+    a: "?",
+    b: "No?",
+    c: "Read and watched the movies broski!",
+    d: "Uh I just watched the movies eh, does that count?",
+    e: "Lmao noob you geek get rekt 360 no scope",
+    correct: "c",
+  },
+  { 
+    question: "Do you like Helena Bonham Carter?",
+    a: "?",
+    b: "Who?",
+    c: "OMG YESSSSSSSS",
+    d: "Still no clue who is that",
+    e: "Eh?",
+    correct: "c",
   },
 ];
 
@@ -34,6 +55,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
 const submitButton = document.getElementById("submit");
 
 //Counters
@@ -63,6 +85,7 @@ const loadQuiz = () => {
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
+  e_text.innerText = currentQuizData.e;
 };
 
 //Loading the quiz
